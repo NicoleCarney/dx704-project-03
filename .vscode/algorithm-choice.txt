@@ -1,0 +1,7 @@
+Using seed 0, I examined reward samples for each arm and observed that rewards are continuous,
+non-negative, and bounded rather than binary 0/1. The reward distributions differ across arms,
+with arm 2 having the highest average reward.
+
+Because rewards are not Bernoulli, Beta-based Thompson sampling is not appropriate.
+I chose the UCB1 algorithm since it is designed for bounded rewards and balances
+exploration and exploitation using an upper confidence bound.
